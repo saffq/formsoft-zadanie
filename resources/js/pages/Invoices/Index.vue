@@ -183,19 +183,19 @@ const confirmDelete = () => {
             </div>
 
             <div class="mt-6 flex justify-center">
-                <nav class="inline-flex space-x-1">
+                <nav class="flex flex-wrap items-center justify-center gap-2">
                     <template v-for="link in props.invoices.links" :key="link.label">
                         <Link
                             v-if="link.url"
                             :href="link.url"
                             :class="link.active
-          ? 'bg-green-950 text-white px-4 py-2 rounded-md shadow hover:bg-green-950 transition focus:outline-none focus:ring-2 focus:ring-green-950'
-          : 'bg-blue-500 text-white px-4 py-2 rounded-md shadow hover:bg-blue-600 transition focus:outline-none focus:ring-2 focus:ring-blue-500'"
+          ? 'bg-green-950 text-white px-2 sm:px-4 py-2 rounded-md shadow hover:bg-green-950 transition focus:outline-none focus:ring-2 focus:ring-green-950'
+          : 'bg-blue-500 text-white px-2 sm:px-4 py-2 rounded-md shadow hover:bg-blue-600 transition focus:outline-none focus:ring-2 focus:ring-blue-500'"
                             v-html="link.label"
                         ></Link>
                         <span
                             v-else
-                            class="bg-gray-500 text-white px-4 py-2 rounded-md shadow transition focus:outline-none focus:ring-2"
+                            class="bg-gray-500 text-white px-2 sm:px-4 py-2 rounded-md shadow transition focus:outline-none focus:ring-2"
                             v-html="link.label"
                         ></span>
                     </template>
