@@ -7,7 +7,7 @@ Zadanie rekrutacyjne
 
 
 
-node : 22
+node : 22.14
 
 php: 8.2 
 
