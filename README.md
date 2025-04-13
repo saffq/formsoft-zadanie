@@ -15,7 +15,7 @@ laravel: 12
 
 
 
-Kroki do odpalenia projektu:
+Kroki do użycia projektu:
 
 composer install
 
